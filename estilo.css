@@ -1,0 +1,523 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Antic+Didone&display=swap');
+
+html{
+        scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Antic Didone', serif;
+    font-size: 1.3em;
+}
+
+.contenido {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/163/707/HD-wallpaper-crushed-black-paper-black-texture-dark.jpg);
+    color:antiquewhite;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    padding: 2em; 
+}
+
+.brand {
+    margin-top: -7px;
+  }
+  .brand span {
+    color: #fea444;
+    font-style: oblique;
+  }
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+ 
+.menu a {    
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor:pointer;
+    font: bolder;
+    
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #191919;
+    transition: ease-in .4s; 
+}
+
+.nav-responsive{
+    background-color: #fea444;
+    color: #191919;    
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.descarga {
+    padding: 10px 20px;
+    background-color: #fea444;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor:pointer;
+
+}
+
+.descarga:hover {
+    background-color: white;
+    transition: ease-in .4s; 
+}
+
+.contenido1 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat (2,1fr);
+    align-items: center;
+    gap: 2em;
+   
+}
+
+.contenido1 h1 {
+    font-size: 5mm;
+}
+
+.contenido1 span {
+    color:antiquewhite;
+    font-size: 6.5mm;
+}
+
+.contenido1 img {
+  border-radius: 10%;
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+  grid-column: 3/5;
+}
+
+.division {
+    height: 4px;
+    width: 60px;
+    background-color: #fea444;
+    margin-top: 5px;
+    margin-bottom: 2.5em;
+}
+
+.sobremi{
+    background-color: #191919;
+    color: antiquewhite;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .fila{
+    display: flex;
+    padding: 5em;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+}
+ 
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #fea444;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #fea444;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #fea444;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skills{
+    background-image: url(https://w0.peakpx.com/wallpaper/163/707/HD-wallpaper-crushed-black-paper-black-texture-dark.jpg);
+    color: antiquewhite;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    color: antiquewhite;
+}
+
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #191919;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #fea444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #fea444;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+.curriculum{
+    background-color: #191919;
+    color: antiquewhite;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #fea444;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #fea444;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #fea444;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #fea444;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #fea444;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fea444;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #fea444;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fea444;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.contacto {
+    background-image: url(https://w0.peakpx.com/wallpaper/163/707/HD-wallpaper-crushed-black-paper-black-texture-dark.jpg);
+    background-size: cover;
+    color: antiquewhite;
+    padding: 50px 20px;
+  
+}
+
+.container-contacto {
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2em;
+}
+
+.container-contacto img {
+    width: 500px;
+    height: 650px;
+    bottom: 0px;
+    border-radius: 10%;    
+}
+
+.contacto-form {
+    padding: 2em;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+    
+}
+
+.formulario input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px dotted;
+    color: #fea444;
+    
+}
+
+.formulario textarea {
+    height: 150px;
+    background: none;
+    color: white;
+    padding: 1.5em;
+    border: 0.5px solid #fea444;
+}
+
+.boton-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #fea444;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton-submit:hover {
+    background-color: white;
+    transition: ease-in .4s; 
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    padding: 3em;
+    color: antiquewhite;
+    background-color:#191919;
+}
+
+.redes a {
+    color: #fea444;
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 30px;        
+}
+
+
+
+
+
